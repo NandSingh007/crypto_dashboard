@@ -1,0 +1,47 @@
+.main_div_of_trending_coin{
+    width:"100%";
+    padding:5px 5px;
+}
+.trending_coin{
+    padding: 0%;
+    margin: 0%;
+    color: #ffffff;
+}
+.coins{
+    display: flex;
+    width: 100%;
+    color: #ffffff;
+    box-shadow: 0px 1px 1px 0px #1c7471;
+}
+.left_side_of_coin{
+    width: 40%;
+    color: #ffffff;
+    text-align: left;
+}
+.right_side_of_coin{
+    width: 60%;
+    color: #ffffff;
+    text-align: right;
+}
+.coin_name{
+    padding: 0% !important;
+    margin: 0% !important;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.market_cap{
+    padding: 0%;
+    margin: 0%;
+    font-size:13px;
+    color: #aaaaaa;
+    /* color: rgb(62, 62, 62); */
+    font-family: 'Times New Roman', Times, serif;
+}
+.right_side_of_coin .percentage_cap{
+    font-size: 18px;
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
