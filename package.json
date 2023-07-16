@@ -1,8 +1,8 @@
 {
-  "name": "CryptoDashboard",
+  "name": "cryptocurrency_dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": " https://NandSingh007.github.io/CryptoDashboard",
+  "homepage": " https://NandSingh007.github.io/cryptocurrency_dashboard",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -16,7 +16,6 @@
     "chartjs-plugin-datalabels": "^2.2.0",
     "cors-anywhere": "^0.4.4",
     "cra-template": "1.2.0",
-    "gh-pages": "^5.0.0",
     "http-proxy-middleware": "^2.0.6",
     "millify": "^6.1.0",
     "postcss": "^8.4.25",
