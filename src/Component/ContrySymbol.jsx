@@ -13,7 +13,7 @@ function ContrySymbol({ onChildData }) {
   //  onclike "symbolHandler" function start 
   const handleClick = useCallback((item) => {
     setCurrencyName(item);
-    // console.log(item);
+    console.log(item);
     onChildData(item);
   }, [onChildData]);
 

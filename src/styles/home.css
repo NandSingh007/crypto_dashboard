@@ -186,7 +186,7 @@
     /* left_bottum_left_box css start  */
     .left_bottum_left_box {
         width: 98% !important;
-        height: 280px !important;
+        height: 290px !important;
         border-radius: 10px;
         background-color: #0b0c31;
         color: #ffffff;
@@ -200,7 +200,7 @@
     /* left_bottum_right_box css start  */
     .left_bottum_right_box {
         width: 98% !important;
-        height: 280px !important;
+        height: 290px !important;
         border-radius: 10px;
         background-color: #0b0c31;
         color: #ffffff;
@@ -217,7 +217,7 @@
 /* left_bottum_left_box css start  */
 .left_bottum_left_box {
     width: 48%;
-    height: 250px;
+    height: 280px;
     border-radius: 10px;
     background-color: #0b0c31;
     color: #ffffff;
@@ -242,7 +242,7 @@
 /* left_bottum_right_box css start  */
 .left_bottum_right_box {
     width: 48%;
-    height: 250px;
+    height: 280px;
     border-radius: 10px;
     background-color: #0b0c31;
     color: #ffffff;

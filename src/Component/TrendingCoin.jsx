@@ -31,9 +31,10 @@ const TrendingCoin = ({ coin }) => {
                                 <span>
                                     {/* Render the appropriate icon based on the price change */}
                                     {Down ? (
-                                        <ArrowDropDownOutlinedIcon color="error" fontSize="small" />
+                                        <ArrowDropDownOutlinedIcon color="error" style={{ fontSize: '28px' }}  />
                                     ) : (
-                                        <ArrowDropUpOutlinedIcon color="success" fontSize="small" />
+                                        <ArrowDropUpOutlinedIcon color="success" style={{ fontSize: '30px' }} />
+
                                     )}
                                 </span> {coin.price_change_percentage_24h.toFixed(4)}
                             </div>

@@ -8,10 +8,9 @@ import '../styles/home.css';
 import SearchBar from './SearchBar';
 import ContrySymbol from './ContrySymbol';
 import Currency from './CurrencyDropdown';
-import ChartDropdown from './ChartDropdwon';
+import ChartDropdown from './ChartDropdown';
 import TrendingCoin from './TrendingCoin';
 import Exchange from './Exchange';
-
 import { fetchApi3Data } from '../ReactReduxStore/ActionApiForChart';
 import { fetchApiData4 } from '../ReactReduxStore/ActionApiOfMarketCap';
 import { fetchApiData5 } from '../ReactReduxStore/ActionApiTrendingCoin';
@@ -32,6 +31,7 @@ const Home = () => {
   // recive data from child component as function who send the data of "symbol"
   const handleClick1 = useCallback((symbol) => {
     setCurrency(symbol)
+    console.log(symbol)
   }, []);
   // recive data from child component as function who send the data of "id"
   const handleClick2 = useCallback((key) => {
@@ -51,12 +51,12 @@ const Home = () => {
   const HandleDay = useCallback((DayData) => {
     console.log(DayData);
     setDay(DayData);
-  },[]);
+  }, []);
 
   useEffect(() => {
     setLoading(true); // Set loading to true before fetching data
     dispatch(fetchApiData4());
-    dispatch(fetchApiData5());
+    dispatch(fetchApiData5({ currency }));
     dispatch(fetchApi3Data({ name, currency, day })).then(() => {
       setLoading(false); // Set loading to false after data is fetched
     });
@@ -90,7 +90,7 @@ const Home = () => {
       },
     ],
   };
-  
+
   const renderChart = () => {
     switch (chart) {
       case 'horizontal':
@@ -103,7 +103,7 @@ const Home = () => {
         return null;
     }
   };
-  
+
   const horizontalBarChartOptions = {
     indexAxis: 'y',
     scales: {
@@ -119,7 +119,7 @@ const Home = () => {
       },
     },
   };
-  
+
   const verticalBarChartOptions = {
     indexAxis: 'x',
     scales: {
@@ -135,7 +135,7 @@ const Home = () => {
       },
     },
   };
-  
+
   const lineChartOptions = {
     scales: {
       x: {
@@ -149,7 +149,7 @@ const Home = () => {
         },
       },
     },
-  }; 
+  };
 
 
 
