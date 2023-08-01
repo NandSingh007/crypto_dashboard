@@ -1,6 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import img from '../Image/alma.png'
+import img from '../Image/logo.png'
 import '../styles/Header.css'
 function Header() {
   return (
@@ -11,8 +11,8 @@ function Header() {
             <img
               alt=""
               src={img}
-              width="170"
-              height="50"
+              width="90"
+              height="35"
               className="d-inline-block align-top"
             />{' '}
           </Navbar.Brand>
