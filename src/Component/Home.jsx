@@ -4,7 +4,6 @@ import { Line, Bar, Pie } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 import '../styles/home.css';
-
 import SearchBar from './SearchBar';
 import ContrySymbol from './ContrySymbol';
 import Currency from './CurrencyDropdown';

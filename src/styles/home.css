@@ -268,6 +268,7 @@
     margin-right: 5px;
     font-size: 15px;
     font-weight: 600;
+    margin: 2p 0px !important;
     border-radius: 6px;
     color: #ffffff;
     border: 1px solid #eaeaea4b;
@@ -301,4 +302,23 @@
     font-family: 'Times New Roman', Times, serif;
     text-transform: capitalize;
     padding: 0px 0px;
+}
+@media screen and (max-width: 480px) {
+    .currency {
+        width: 15% !important;
+        margin-left: 5%;
+        padding: 5px 15px !important;
+        text-align: left !important;
+    }
+    .left_upper_part {
+        display: block !important;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-left: 26px !important;
+        margin-bottom: 3%;
+    }
+    .days ul {
+        padding-left: 20px;
+        display: inline-grid !important;
+    }
 }
