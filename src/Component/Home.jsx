@@ -19,7 +19,6 @@ import LoadingComponentSecond from './LoadingComponentSecond';
 import { chartDays } from '../ReactReduxStore/dayData';
 
 const Home = () => {
-
   const dispatch = useDispatch();
   const [name, setName] = useState("bitcoin")
   const [currency, setCurrency] = useState("INR")
@@ -29,9 +28,15 @@ const Home = () => {
 
   // recive data from child component as function who send the data of "symbol"
   const handleClick1 = useCallback((symbol) => {
-    setCurrency(symbol)
-    console.log(symbol)
+    console.log('Selected currency symbol:', symbol);
+    setCurrency(symbol);
   }, []);
+  
+// useEffect(() => {
+//   setCurrency(currency)
+//   console.log('Updated currency:', currency);
+// }, [currency]);
+
   // recive data from child component as function who send the data of "id"
   const handleClick2 = useCallback((key) => {
     setName(key)
@@ -214,10 +219,12 @@ const Home = () => {
           let dataArr = ctx.chart.data.datasets[0].data;
           dataArr.map((data) => {
             sum += data;
+            return null; // Add this line to satisfy ESLint
           });
           let percentage = "$" + ((value * 1000) / sum).toFixed(2);
           return percentage;
         },
+
 
         labels: {
           title: {
