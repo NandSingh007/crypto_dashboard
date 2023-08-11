@@ -15,21 +15,29 @@ Welcome to the Cryptocurrency Dashboard project! This is an exciting endeavor ai
 * Top Ten Currency Sidebar: Stay informed about the top-performing cryptocurrencies. The Sidebar component showcases the trending and most valuable currencies, powered by the Action API for Trending Coin and Market Cap.
 
 # Components
-   # ChartDropdown.jsx: Choose from a variety of chart options to visualize market data.
+   # ChartDropdown.jsx: 
+     Choose from a variety of chart options to visualize market data.
 
-   # CountrySymbol.jsx: Seamlessly switch between currency symbols for a personalized experience.
+   # CountrySymbol.jsx: 
+     Seamlessly switch between currency symbols for a personalized experience.
 
-   # CurrencyDropdown.jsx: Select and explore different cryptocurrencies.
+   # CurrencyDropdown.jsx: 
+     Select and explore different cryptocurrencies.
 
-   # Exchange.jsx: Discover cryptocurrency exchange data.
+   # Exchange.jsx: 
+     Discover cryptocurrency exchange data.
 
-   # Header.jsx: Navigate through the dashboard with ease using the header component.
+   # Header.jsx: 
+     Navigate through the dashboard with ease using the header component.
 
-   # Home.jsx: Your dashboard's main hub, featuring various modules for insights.
+   # Home.jsx: Your 
+     dashboard's main hub, featuring various modules for insights.
 
-   # SearchBar.jsx: Quickly find specific cryptocurrency information.
+   # SearchBar.jsx: 
+     Quickly find specific cryptocurrency information.
 
-   # TrendingCoin.jsx: Stay updated with the latest trends in the cryptocurrency market.
+   # TrendingCoin.jsx: 
+     Stay updated with the latest trends in the cryptocurrency market.
 
 # How to Use
 
